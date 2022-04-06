@@ -1,7 +1,7 @@
-Instructions to setup
+## Instructions to setup
 
-*) Clone the project
-*) RUN composer install
+- *) Clone the project
+- *) RUN composer install
 *) RUN npm install
 *) RUN npm run dev
 *) Add .env file with DB credentials
