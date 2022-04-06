@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,11 @@ Route::get('/', function () {
 });
 
 Auth::routes(['verify' => true]);
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
 Route::resource('products', ProductController::class);
+
+
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::post('/saveUserProduct', [HomeController::class, 'saveUserProduct'])->name('userproducts.store');
+
+
