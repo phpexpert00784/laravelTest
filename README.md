@@ -27,4 +27,4 @@ Credentials :
 - Email : admin@gmail.com
 - Pass : admin123
 
-Rest all register users are normal users
+Note : Rest all register users are normal users
