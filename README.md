@@ -2,10 +2,10 @@
 
 - *) Clone the project
 - *) RUN composer install
-*) RUN npm install
-*) RUN npm run dev
-*) Add .env file with DB credentials
-*) Setup in .env
+- *) RUN npm install
+- *) RUN npm run dev
+- *) Add .env file with DB credentials
+- *) Setup in .env
 
 MAIL_MAILER=smtp
 MAIL_HOST=smtp.gmail.com
