@@ -41,4 +41,16 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //check the email verified or not
+    public function scopeVerified($query)
+    {
+        return $query->whereNotNull('email_verified_at');
+    }
+
+    //relaton with products in products table
+    public function userProducts()
+    {
+        return $this->hasMany('App\Models\UserProducts', 'user_id');
+    }
 }

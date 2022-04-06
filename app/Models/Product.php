@@ -12,4 +12,10 @@ class Product extends Model
     protected $fillable = [
         'title', 'description', 'image' ,'status'
     ];
+
+     //relaton with active products in products table
+    public function userProduct()
+    {
+        return $this->hasMany('App\Models\UserProducts', 'product_id');
+    }
 }
